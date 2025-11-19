@@ -155,7 +155,7 @@ with tab_listar:
                     with st.form(f"form_edit_{ag_id}"):
                         # Cliente e datas
                         cliente_label = st.selectbox("Cliente", options=list(clientes_map.keys()),
-                                                    index=list(clients := list(clients_map.keys())).index(init_cliente_label) if init_cliente_label in clients else 0)
+                                                    index=list(clients := list(clientes_map.keys())).index(init_cliente_label) if init_cliente_label in clients else 0)
                         cliente_id_new = clients[clients.index(cliente_label)]
 
                         col1, col2 = st.columns(2)
